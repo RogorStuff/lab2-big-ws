@@ -1,4 +1,4 @@
-|756123 |[Rogelio Lacruz])(https://github.com/RogorStuff)|[RogorStuff/lab2-big-ws](https://github.com/RogorStuff/lab2-big-ws/tree/test) |[![Build Status](https://travis-ci.com/RogorStuff/lab2-big-ws.svg)](https://travis-ci.com/RogorStuff/lab2-big-ws)       | JUnit tests, Spring exceptions|  
+|756123 |[Rogelio Lacruz])(https://github.com/RogorStuff)|[RogorStuff/lab2-big-ws](https://github.com/RogorStuff/lab2-big-ws/tree/test) |[![Build Status](https://travis-ci.com/RogorStuff/lab2-big-ws.svg?branch=test)](https://travis-ci.com/RogorStuff/lab2-big-ws)       | JUnit tests, Spring exceptions|  
 # Web Engineering 2020-2021 / Big Web Services
 **In this assignment your PR must only modify the `README.md` file**. Please, go to the [Wiki](https://github.com/UNIZAR-30246-WebEngineering/lab2-big-ws/wiki) in order to get the instructions for this assignment.
 
