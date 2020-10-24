@@ -36,7 +36,7 @@ public class TranslatorEndpointTest {
     marshaller.afterPropertiesSet();
   }
 
-  @Test
+  @Test(expected = RuntimeException.class)
   public void testSendAndReceive() {
     GetTranslationRequest request = new GetTranslationRequest();
     request.setLangFrom("en");
@@ -50,6 +50,7 @@ public class TranslatorEndpointTest {
     assertThat(translation.getTranslation(), is("I don't know how to translate from en to es the text 'This is a test of translation service'"));
   }
 
+  @Test(expected = WebServiceIOException.class)
   public void testNetworkFailure() {
     GetTranslationRequest request = new GetTranslationRequest();
     request.setLangFrom("en");
@@ -63,6 +64,7 @@ public class TranslatorEndpointTest {
     assertThat(translation.getTranslation(), is("I don't know how to translate from en to es the text 'This is a test of translation service'"));
   }
 
+  @Test(expected = WebServiceIOException.class)
   public void testRemoteServiceFailure() {
     GetTranslationRequest request = new GetTranslationRequest();
     request.setLangFrom("en");
